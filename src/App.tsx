@@ -39,7 +39,6 @@ const App = () => {
     { name: 'Alerce', value: 1.8 },
     { name: 'Llanquihue', value: 1.6 },
     { name: 'Concepción', value: 1.4 },
-    { name: 'Otros', value: 42.3 },
   ];
 
   // Datos Instagram
