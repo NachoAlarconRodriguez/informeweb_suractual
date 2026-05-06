@@ -29,11 +29,17 @@ const App = () => {
   };
 
   const cityData = [
-    { name: 'P. Montt', value: 35 },
-    { name: 'P. Varas', value: 30 },
-    { name: 'Osorno', value: 15 },
-    { name: 'Santiago', value: 12 },
-    { name: 'Otros', value: 8 },
+    { name: 'P. Montt', value: 16.9 },
+    { name: 'Santiago', value: 12.4 },
+    { name: 'P. Varas', value: 6.0 },
+    { name: 'Osorno', value: 5.9 },
+    { name: 'Frutillar', value: 4.7 },
+    { name: 'Valdivia', value: 3.6 },
+    { name: 'Temuco', value: 3.4 },
+    { name: 'Alerce', value: 1.8 },
+    { name: 'Llanquihue', value: 1.6 },
+    { name: 'Concepción', value: 1.4 },
+    { name: 'Otros', value: 42.3 },
   ];
 
   // Datos Instagram
@@ -204,7 +210,7 @@ const App = () => {
                   className="bg-white p-8 rounded-3xl shadow-sm border border-slate-100"
                 >
                   <h3 className="text-xl font-bold mb-8 text-slate-800">Presencia Geográfica Principal</h3>
-                  <div className="h-72">
+                  <div className="h-[450px]">
                     <ResponsiveContainer width="100%" height="100%">
                       <BarChart data={cityData} layout="vertical" margin={{ left: 20 }}>
                         <CartesianGrid strokeDasharray="3 3" horizontal={false} stroke="#f1f5f9" />
