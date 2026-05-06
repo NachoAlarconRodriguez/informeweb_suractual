@@ -29,10 +29,10 @@ const App = () => {
   };
 
   const cityData = [
-    { name: 'Santiago', value: 45 },
-    { name: 'P. Montt', value: 30 },
-    { name: 'Osorno', value: 15 },
-    { name: 'Otros', value: 10 },
+    { name: 'P. Montt', value: 42 },
+    { name: 'P. Varas', value: 38 },
+    { name: 'Santiago', value: 12 },
+    { name: 'Otros', value: 8 },
   ];
 
   // Datos Instagram
@@ -231,7 +231,7 @@ const App = () => {
                   </div>
                   <div className="mt-8 flex items-center justify-center gap-2 text-slate-500 text-sm bg-slate-50 py-3 rounded-xl">
                     <MapPin size={16} className="text-orange-500" />
-                    Fuerte liderazgo en la Región de Los Lagos y Santiago.
+                    Liderazgo absoluto en la Región de Los Lagos.
                   </div>
                 </motion.div>
 
