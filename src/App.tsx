@@ -4,7 +4,7 @@ import {
   PieChart, Pie, Cell, AreaChart, Area 
 } from 'recharts';
 import { 
-  Globe, Camera, LayoutDashboard, Smartphone, Users, 
+  Globe, Camera, LayoutDashboard, Users, 
   TrendingUp, Clock, MousePointer2, MapPin, Target, Info, ChevronRight
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
