@@ -29,8 +29,9 @@ const App = () => {
   };
 
   const cityData = [
-    { name: 'P. Montt', value: 42 },
-    { name: 'P. Varas', value: 38 },
+    { name: 'P. Montt', value: 35 },
+    { name: 'P. Varas', value: 30 },
+    { name: 'Osorno', value: 15 },
     { name: 'Santiago', value: 12 },
     { name: 'Otros', value: 8 },
   ];
