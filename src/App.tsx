@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { 
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, 
-  PieChart, Pie, Cell, AreaChart, Area 
+  PieChart, Pie, Cell, AreaChart, Area, LabelList 
 } from 'recharts';
 import { 
   Globe, Camera, LayoutDashboard, Users, 
@@ -220,12 +220,20 @@ const App = () => {
                           cursor={{ fill: '#f8fafc' }}
                           contentStyle={{ borderRadius: '12px', border: 'none', boxShadow: '0 10px 15px -3px rgb(0 0 0 / 0.1)' }}
                         />
-                        <Bar 
-                          dataKey="value" 
-                          fill={colors.primary} 
-                          radius={[0, 10, 10, 0]} 
-                          barSize={32}
-                        />
+                          <Bar 
+                            dataKey="value" 
+                            fill={colors.primary} 
+                            radius={[0, 10, 10, 0]} 
+                            barSize={32}
+                          >
+                            <LabelList 
+                              dataKey="value" 
+                              position="right" 
+                              formatter={(val: any) => `${val}%`} 
+                              style={{ fill: '#64748b', fontSize: 12, fontWeight: 600 }}
+                              offset={10}
+                            />
+                          </Bar>
                       </BarChart>
                     </ResponsiveContainer>
                   </div>
