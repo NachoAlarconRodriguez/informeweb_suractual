@@ -37,10 +37,10 @@ const App = () => {
 
   // Datos Instagram
   const igReachData = [
-    { day: 'Sem 1', reach: 12000 },
-    { day: 'Sem 2', reach: 25000 },
-    { day: 'Sem 3', reach: 41000 },
-    { day: 'Sem 4', reach: 55246 },
+    { day: 'Sem 1', reach: 180000 },
+    { day: 'Sem 2', reach: 450000 },
+    { day: 'Sem 3', reach: 820000 },
+    { day: 'Sem 4', reach: 1100000 },
   ];
 
   const genderData = [
@@ -155,9 +155,9 @@ const App = () => {
                       animate={{ scale: 1, opacity: 1 }}
                       className="text-6xl font-black text-white mb-2"
                     >
-                      78k+
+                      1,1M+
                     </motion.p>
-                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-orange-400">Alcance Mensual</p>
+                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-orange-400">Alcance Mensual Total</p>
                   </div>
                 </div>
               </div>
@@ -173,9 +173,9 @@ const App = () => {
                   <StatCard 
                     icon={Users} 
                     title="Alcance Total Mensual" 
-                    value="78,246" 
+                    value="1,1M+" 
                     subtext="Usuarios únicos combinados (Web + IG)"
-                    trend="+15% vs mes anterior"
+                    trend="+45% vs mes anterior"
                     delay={0.1}
                   />
                   <StatCard 
@@ -309,11 +309,12 @@ const App = () => {
                 </div>
               </div>
 
-              <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
-                <StatCard icon={Globe} title="Usuarios Activos" value="23,000" subtext="Últimos 28 días" delay={0.1} />
-                <StatCard icon={LayoutDashboard} title="Páginas Vistas" value="56,000" subtext="Consumo total de contenido" delay={0.2} />
-                <StatCard icon={Clock} title="Tiempo Medio" value="53s" subtext="Atención por sesión" delay={0.3} />
-                <StatCard icon={Smartphone} title="Mobile" value="91.4%" subtext="Tráfico desde celulares" delay={0.4} />
+              <section className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
+                <StatCard icon={Users} title="Usuarios Nuevos" value="208" subtext="En el periodo" delay={0.1} />
+                <StatCard icon={LayoutDashboard} title="Eventos" value="1,2 mil" subtext="En el periodo" delay={0.2} />
+                <StatCard icon={Clock} title="Tiempo de Interacción" value="1 min 24 seg" subtext="Media por sesión" delay={0.3} />
+                <StatCard icon={MousePointer2} title="% de Interacción" value="58,9%" subtext="Engagement rate" delay={0.4} />
+                <StatCard icon={Target} title="Impresiones de Búsqueda" value="116" subtext="Visibilidad en Google" delay={0.5} />
               </section>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -405,17 +406,17 @@ const App = () => {
                       animate={{ scale: 1, opacity: 1 }}
                       className="text-6xl font-black text-white mb-2"
                     >
-                      +233%
+                      3,8M
                     </motion.p>
-                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-orange-400">Alcance Mensual</p>
+                    <p className="text-xs font-bold uppercase tracking-[0.2em] text-orange-400">Visualizaciones Totales</p>
                   </div>
                 </div>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <StatCard icon={Users} title="Cuentas Alcanzadas" value="55,246" subtext="Último mes" delay={0.1} />
-                <StatCard icon={TrendingUp} title="Interacciones" value="1,700+" subtext="Likes, Comments, Shares" delay={0.2} />
-                <StatCard icon={MapPin} title="Seguidores Nuevos" value="340+" subtext="Crecimiento orgánico" delay={0.3} />
+                <StatCard icon={Camera} title="Visualizaciones" value="3,8 mill" subtext="Último periodo" delay={0.1} />
+                <StatCard icon={Users} title="Alcance" value="1,1 mill" subtext="Cuentas alcanzadas" delay={0.2} />
+                <StatCard icon={TrendingUp} title="Interacción Contenido" value="151,2 mil" subtext="Engagement total" delay={0.3} />
               </div>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
